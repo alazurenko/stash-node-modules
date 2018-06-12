@@ -18,5 +18,10 @@ with a suffix of a branch name.
 // node_modules-master has been renamed to node_modules
 ```
 
+Also update `.gitignore` with pattern for renamed node_modules for convenience.
+```
+node_modules*
+```
+
 ## License
 [MIT](https://opensource.org/licenses/mit-license.php)
