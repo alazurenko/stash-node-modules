@@ -12,9 +12,9 @@ with a suffix of a branch name.
 
 ## How to use
 ```
-> snm
+> stash-nm
 // node_modules has been renamed to node_modules-master
-> snm
+> stash-nm
 // node_modules-master has been renamed to node_modules
 ```
 

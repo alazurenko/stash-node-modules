@@ -1,7 +1,7 @@
 {
   "name": "stash-node-modules",
   "bin": {
-    "snm": "./index.js"
+    "stash-nm": "./index.js"
   },
   "version": "1.0.0",
   "main": "index.js",
