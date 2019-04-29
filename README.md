@@ -3,10 +3,11 @@
 > Stash node modules based on git branch
 
 ## Install
+```sh
+$ git clone https://github.com/alazurenko/stash-node-modules.git
 
-`git clone https://github.com/alazurenko/stash-node-modules.git`
-
-`cd stash-node-modules && npm link`
+$ cd stash-node-modules && npm link
+```
 
 Then `snm` will be available as global command
 
@@ -20,10 +21,10 @@ time-consuming.
 
 ## How to use
 
-```
-> snm
+```sh
+$ snm
 // node_modules has been renamed to stashed_modules
-> snm
+$ snm
 // stashed_modules has been renamed to node_modules
 ```
 
