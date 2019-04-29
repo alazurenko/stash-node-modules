@@ -1,9 +1,9 @@
 {
   "name": "stash-node-modules",
   "bin": {
-    "stash-nm": "./index.js"
+    "snm": "./index.js"
   },
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT"
 }

@@ -9,6 +9,7 @@ const rename = promisify(fs.rename);
 const log = console.log;
 
 const NODE_MODULES = "node_modules";
+const STASHED_NODE_MODULES = "stashed_modules";
 const GIT_CMD = "git rev-parse --abbrev-ref HEAD";
 const cwd = process.cwd();
 
@@ -23,12 +24,12 @@ async function renameFolder(name, newName) {
 }
 
 async function toggle() {
-  const name = await getBranchName();
-  const newName = `${NODE_MODULES}-${name}`;
+  const branch= await getBranchName();
+  const newName = `${STASHED_NODE_MODULES}-${branch}`;
   const hasModules = await exists(`${cwd}/${NODE_MODULES}`);
   const hasRenamedModules = await exists(`${cwd}/${newName}`);
 
-  if (!name) {
+  if (!branch) {
     return;
   }
 
